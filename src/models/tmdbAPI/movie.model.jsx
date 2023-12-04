@@ -74,7 +74,12 @@ export async function getCredits(movieId){
     return await data;
     }
 
+export async function getMovieTrailer(movieId){
+    const response = await fetch(`${URL}/movie/${movieId}/videos?api_key=${apikey}`, {options});
+    const data = await response.json();
 
+    return await data;
+}
 
 
 
