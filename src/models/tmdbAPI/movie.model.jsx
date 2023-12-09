@@ -40,7 +40,7 @@ const image_sizes=[
 
 //GETs
 export async function getMovieById(movieId) {
-    const response = await fetch(`${URL}/movie/${movieId}?api_key=${apikey}`, {options});
+    const response = await fetch(`${URL}/movie/${movieId}?api_key=${apikey}&language=${language}`, {options});
     const data = await response.json();
     return await data;
     }

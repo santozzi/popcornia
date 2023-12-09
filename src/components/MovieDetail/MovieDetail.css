@@ -1,0 +1,30 @@
+.moviedetail {
+  
+  position:absolute;
+  top: 0;
+  left:0;
+  width: 100vw;
+  min-height: 100vh;
+  z-index: -1;
+  background-size: cover;
+  filter: grayscale();
+}
+.moviedetailfront{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:100%;
+    min-height: 100vh;
+    background-color: #000000c5;
+    
+    color:white;
+}
+.movie-card-detail{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    max-width: 400px;
+    padding: 50px;
+}

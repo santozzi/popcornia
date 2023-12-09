@@ -76,6 +76,7 @@ const Home = ({}) => {
    
 		}
 		</section>
+	{/* 	TODO: hacer paginado */}
 	  </>
 	)
   }
