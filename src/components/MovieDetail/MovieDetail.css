@@ -1,24 +1,51 @@
+.back-button{
+  width: 100%;
+  padding: 0 0 0 50px;
+  position: fixed;
+  bottom: 50%;
+  top:50%;
+}
+.back-button button{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #ffffff55;
+}
+.back-button button i{
+  font-size: 2rem;
+  color:red;
+ 
+}
+
+
 .moviedetail {
   
-  position:absolute;
-  top: 0;
-  left:0;
+
+ 
   width: 100vw;
   min-height: 100vh;
-  z-index: -1;
+
   background-size: cover;
-  filter: grayscale();
+
 }
 .moviedetailfront{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     flex-wrap: wrap;
     width:100%;
     min-height: 100vh;
     background-color: #000000c5;
-    
+  
     color:white;
+}
+.movie-detail-trailer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin:100px 0;
 }
 .movie-card-detail{
     display: flex;
@@ -27,4 +54,8 @@
     flex-direction: column;
     max-width: 400px;
     padding: 50px;
+}
+.titulo-reparto{
+  margin: 0;
+  font-size: 2rem;
 }

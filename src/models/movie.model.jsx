@@ -44,10 +44,25 @@ export async function getMovieById(movieId) {
     const data = await response.json();
     return await data;
     }
-
-export async function getMoviesByPage(page,year='2023') {
-    const response = await fetch(`${URL}/discover/movie?api_key=${apikey}&page=${page}&language=${language}&primary_release_year=${year}`, {options});
+export async function getMoviesByTitle(page,title) {
+    const response = await fetch(`${URL}/search/movie?api_key=${apikey}&query=${title}&language=${language}&page=${page}`, {options});
     const data = await response.json();
+    return await data;
+    }
+export async function getMoviesByPage(page,protagonista="",year="") {
+    const response = await fetch(`${URL}/discover/movie?api_key=${apikey}&page=${page}&language=${language}&primary_release_year=${year}&with_cast=${protagonista}`, {options});
+    const data = await response.json();
+    if(data.total_pages>500)
+      data.total_pages=500;
+    return await data;
+    }
+export async function getMoviesByYear(page,year) {
+    const data = await getMoviesByPage(page,"",year);
+ 
+    return await data;
+    }
+export async function getMoviesByProtagonist(page,protagonista) {
+    const data = await getMoviesByPage(page,protagonista);
     return await data;
     }
 export async function getCertifications(){
@@ -76,6 +91,13 @@ export async function getCredits(movieId){
 
 export async function getMovieTrailer(movieId){
     const response = await fetch(`${URL}/movie/${movieId}/videos?api_key=${apikey}`, {options});
+    const data = await response.json();
+
+    return await data;
+}
+
+export async function getIdProtagonistaByName(name){
+    const response = await fetch(`${URL}/search/person?api_key=${apikey}&query=${name}`, {options});
     const data = await response.json();
 
     return await data;

@@ -9,6 +9,7 @@ import {
     Link,
   } from "react-router-dom";
   import MovieDetail from './components/MovieDetail/MovieDetail.jsx';
+import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
   const router = createBrowserRouter([
     {
       path: "/",
@@ -20,6 +21,10 @@ import {
       path: "movie/:id",
       element:    <MovieDetail />,
     },
+    {
+      path: "*",
+      element: <ErrorPage />,
+    }
   ]);
   
 ReactDOM.createRoot(document.getElementById('root')).render(

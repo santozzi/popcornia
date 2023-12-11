@@ -2,21 +2,21 @@
 
   margin: 0;
   padding: 0;
-  text-align: center;
+  align-items: center;
   width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  
 }
 
 body{
   width: 100%;
+
 }
 
 .read-the-docs {
   color: #888;
-}
-.movies-section{
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 100%;
-  margin-top: 50px;
 }

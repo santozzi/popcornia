@@ -1,0 +1,28 @@
+@import url("Header.css");
+.error-page-img {
+  width: 100%;
+}
+.error-page-container{
+    position:relative;
+
+}
+.error-code{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position:absolute;
+    color: black;
+    top:0;
+    left:0;
+    width: 100%;
+   
+    font-size: 7rem;
+    font-weight: bold;
+}
+.error-code p{
+    margin:0
+}
+.error-message{
+    font-size: 2rem;
+}
