@@ -12,13 +12,13 @@ import {
 import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/popcornia/",
       element: (
         <App />
       ),
     },
     {
-      path: "movie/:id",
+      path: "/popcornia/movie/:id",
       element:    <MovieDetail />,
     },
     {
