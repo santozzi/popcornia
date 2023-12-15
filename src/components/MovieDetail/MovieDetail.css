@@ -1,9 +1,11 @@
 .back-button{
-  width: 100%;
-  padding: 0 0 0 50px;
+  
+ 
   position: fixed;
-  bottom: 50%;
-  top:50%;
+  left: 34px;
+
+
+  top:10px;
 }
 .back-button button{
   width: 80px;
@@ -19,10 +21,8 @@
 
 
 .moviedetail {
-  
 
- 
-  width: 100vw;
+min-width: 100vw;
   min-height: 100vh;
 
   background-size: cover;
@@ -44,6 +44,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   flex-direction: row;
   margin:100px 0;
 }
@@ -52,10 +53,22 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    max-width: 400px;
-    padding: 50px;
+    max-width: 350px;
+    padding: 40px;
+}
+.movie-card-detail h1{
+  text-align: center;
+}
+.movie-card-detail-text{
+  text-align: justify;
 }
 .titulo-reparto{
   margin: 0;
   font-size: 2rem;
+}
+.video-player{
+  width: 100%;
+  height: 100%;
+  padding:10px 8px;
+  text-align: center;
 }

@@ -4,19 +4,13 @@ import "./Home.css";
 import Header from "../Header/Header";
 import { useEffect, useState } from "react";
 import {
-  getMovieById,
   getMoviesByPage,
-  getCertifications,
-  languagesList,
-  getCredits,
-  getMovieTrailer,
   getIdProtagonistaByName,
   getMoviesByTitle,
   getMoviesByProtagonist,
   getMoviesByYear,
 } from "../../models/movie.model";
 import MovieView from "../MovieView/MovieView";
-import PropTypes from "prop-types";
 import Paginacion from "../Paginacion/Paginacion";
 
 const Home = ({}) => {
@@ -152,7 +146,5 @@ const Home = ({}) => {
     </>
   );
 };
-
-Home.propTypes = {};
 
 export default Home;

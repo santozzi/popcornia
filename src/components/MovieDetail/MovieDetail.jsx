@@ -72,7 +72,7 @@ const MovieDetail = ({}) => {
           <div className="movie-detail-trailer">
             <div className="movie-card-detail">
               <h1>{movie.title}</h1>
-              <div>{movie.overview}</div>
+              <div className="movie-card-detail-text">{movie.overview}</div>
             </div>
             {isTrailer ? (
               <div className="video-player">
