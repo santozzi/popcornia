@@ -9,7 +9,7 @@ const MovieView = (props) => {
 		<div className='movie-view-card'>
           {/* <h3 className='movie-view-title'>{title}</h3> */}
         
-          <Link to={`/movie/${id}`}> <img src={"https://image.tmdb.org/t/p/w300"+poster_path} alt={title} /> </Link>
+          <Link to={`/popcornia/movie/${id}`}> <img src={"https://image.tmdb.org/t/p/w300"+poster_path} alt={title} /> </Link>
 		 {/*  <p>{overview}</p> */}
       
         </div>
