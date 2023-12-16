@@ -1,0 +1,17 @@
+@media only screen and (min-width: 376px) and (max-width: 767px){
+.movie-view-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 325px;
+    margin:5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+}
+.movie-view-card img{
+    width: 325px;
+    
+}
+}

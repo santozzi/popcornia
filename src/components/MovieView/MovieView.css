@@ -1,19 +1,6 @@
-.movieview {
-  
-}
+@import url(MovieView-desktop.css);
+@import url(MovieView-tablet.css);
+@import url(MovieView-mobile.css);
 
-.movie-view-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 350px;
-    margin:5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #ccc;
-}
-.movie-view-card img{
-    width: 350px;
-    
-}
+
+

@@ -33,18 +33,20 @@ const Paginacion = (props) => {
 	const estiloActivo = {
 		activado: {
 			color: 'white',
+			padding: 0
 			
 		
 		},
 		desactivado: {
 			color: 'grey',
+			padding: 0
 		
 		}
 	}
 	
 	return (
 		<div className='paginacion'>
-		   { <div>
+		   { <>
 			
  		   <button onClick={prevHandler } disabled = {page<=1} ><i className="fa-solid fa-arrow-left" style={(page>1)?estiloActivo.activado :estiloActivo.desactivado}></i></button>
 	        {(totalPaginas>7)
@@ -76,7 +78,7 @@ const Paginacion = (props) => {
 			</>
 			}
 		   <button onClick={nextHandler} disabled = {page>=totalPaginas}><i className="fa-solid fa-arrow-right" style={(page<totalPaginas)?estiloActivo.activado :estiloActivo.desactivado}></i></button>
-		   </div>
+		   </>
 		   }
  		</div>
 	);
