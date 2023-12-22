@@ -22,7 +22,7 @@ import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
       element:    <MovieDetail />,
     },
     {
-      path: "*",
+      path: "/popcornia/*",
       element: <ErrorPage />,
     }
   ]);
