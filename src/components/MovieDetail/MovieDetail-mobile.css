@@ -1,0 +1,10 @@
+@media only screen and (min-width: 376px) and (max-width: 767px){
+    .movie-card-detail-text{
+        text-align: justify;
+        width: 100%;
+        padding:20px;
+        border: #ffffffc5 1px solid;
+        background-color: #00000060;
+        border-radius: 5px;
+      }
+}
